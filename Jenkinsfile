@@ -10,9 +10,9 @@ pipeline {
                          }
                 }
               stage("test") {             
-                 when {            # le stage test ne s'execute que si le params.exec est True
+                 when {            
                         expression {
-                               params.executeTests   # or params.executeTests == true      
+                               params.executeTests 
                             }
                      }
                  steps {
